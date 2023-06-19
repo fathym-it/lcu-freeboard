@@ -1,0 +1,41 @@
+{
+  "Applications": {
+    "$1": {
+      "Application": {
+        "Description": "Freeboard API",
+        "Name": "Freeboard API"
+      },
+      "LookupConfig": {
+        "PathRegex": "/api/iotensemble/devices/telemetry.*"
+      },
+      "LowCodeUnit": {
+        "APIRoot": "https://fcp-iotensemble.azurewebsites.net/api/GetDevicesTelemetrySync",
+        "Security": "x-functions-key~9BjkihLkMJ8ZS8XrkoXGHlTl6Fw13/jShMiThJmVPjHnHdA3yO8RiQ==",
+        "Type": "API"
+      },
+      "Processor": {
+        "InboundPath": "api/iotensemble/devices/telemetry",
+        "Type": "Proxy"
+      }
+    },
+    "$2": {
+      "Application": {
+        "Description": "Freeboard Dashboard",
+        "Name": "Freeboard Dashboard"
+      },
+      "LookupConfig": {
+        "PathRegex": "/freeboard.*"
+      },
+      "LowCodeUnit": {
+        "Package": "@semanticjs/freeboard",
+        "Version": "latest",
+        "Type": "NPM"
+      },
+      "Processor": {
+        "BaseHref": "/freeboard/",
+        "DefaultFile": "index.html",
+        "Type": "DFS"
+      }
+    }
+  }
+}

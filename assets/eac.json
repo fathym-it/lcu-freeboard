@@ -9,8 +9,8 @@
         "PathRegex": "/api/iot.*"
       },
       "LowCodeUnit": {
-        "APIRoot": "https://fcp-iotensemble.azurewebsites.net/api/GetDevicesTelemetrySync",
-        "Security": "x-functions-key~{{IOT_API_KEY_VARIABLE}}",
+        "APIRoot": "https://fathym-cloud-prd.azure-api.net/fcp-iotensemble",
+        "Security": "lcu-subscription-key~{{IOT_ENSEMBLE_API_KEY}}",
         "Type": "API"
       },
       "Processor": {

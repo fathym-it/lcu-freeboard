@@ -1,9 +1,27 @@
 {
   "Package": {
     "Name": "Freeboard Dashboard",
-    "Description": "A Freeboard Dashboard for your IoT Devices",
-    "Image": "https://www.fathym.com/img/baserow-logo500x275.jpg",
-    "PreviewImage": "https://www.fathym.com/img/baserow-thumbnail-logo.jpg",
-    "UsesGit": true
+    "Description": "A Freeboard Dashboard to view IoT device data",
+    "Image": "https://www.fathym.com/assets/images/logo.png",
+    "PreviewImage": "https://www.fathym.com/assets/images/logo.png",
+    "Intents":[
+      "Freeboard",
+      "Getting started",
+      "Website",
+      "Application"
+    ]
+  },
+  "Configurations": {
+    "Full": {
+      "Name": "Freeboard Dashboard",
+      "Description": "A Freeboard Dashboard to view IoT device data",
+      "Phases": [
+        {
+          "Name": "Setup Freeboard Dashboard",
+          "Order": 1,
+          "Asset": "freeboard"
+        }
+      ]
+    }
   }
 }

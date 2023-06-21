@@ -2,8 +2,8 @@
   "Applications": {
     "{{$1}}-freeboard-api": {
       "Details": {
-        "Description": "Freeboard IoT API",
-        "Name": "Freeboard IoT API"
+        "Description": "The API Proxy for Freeboard Warm Query API",
+        "Name": "Freeboard API Proxy"
       },
       "LookupConfig": {
         "PathRegex": "/api/iot.*"

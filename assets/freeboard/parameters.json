@@ -4,7 +4,7 @@
     "Prompts": [
       {
         "Type": "eac:projects|select",
-        "Message": "Choose the project to deploy the Freeboard Dashboard to?",
+        "Message": "Choose the project to deploy the package to?",
         "Arguments": {
           "CreateText": "Create a project"
         }
@@ -15,8 +15,7 @@
     "Order": 2,
     "Prompts": [
       {
-        "type": "input",
-        "message": "Enter your IoT Ensemble API Key (www.fathym.com/dashboard/iot):"
+        "Message": "Enter your IoT Ensemble API Key (https://www.fathym.com/dashboard/iot):"
       }
     ]
   }

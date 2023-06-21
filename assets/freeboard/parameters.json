@@ -11,17 +11,13 @@
       }
     ]
   },
-  "ORGANIZATION": {
+  "IOT_ENSEMBLE_API_KEY": {
     "Order": 2,
     "Prompts": [
       {
-        "Type": "git:organizations|select",
-        "Message": "Which organization would you like to fork code into?"
+        "type": "input",
+        "message": "Enter your IoT Ensemble API Key (www.fathym.com/dashboard/iot):"
       }
     ]
-  },
-  "IOT_ENSEMBLE_API_KEY": {
-    "type": "input",
-    "message": "Enter your IoT Ensemble API Key (www.fathym.com/dashboard/iot):"
   }
 }

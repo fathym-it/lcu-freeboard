@@ -2,14 +2,14 @@
   "Applications": {
     "$1": {
       "Application": {
-        "Description": "Freeboard API",
-        "Name": "Freeboard API"
+        "Description": "The API Proxy for Freeboard Warm Query API",
+        "Name": "Freeboard API Proxy"
       },
       "LookupConfig": {
         "PathRegex": "/api/iot.*"
       },
       "LowCodeUnit": {
-        "APIRoot": "https://fathym-cloud-prd.azure-api.net/fcp-iotensemble",
+        "APIRoot": "https://fathym-cloud-prd.azure-api.net/fcp-iotensemble/WarmQuery",
         "Security": "lcu-subscription-key~{{IOT_ENSEMBLE_API_KEY}}",
         "Type": "API"
       },

@@ -1,30 +1,8 @@
 {
   "Applications": {
-    "{{$1}}-freeboard-api": {
+    "{{$1}}-freeboard-dashboard": {
       "Details": {
-        "Description": "The API Proxy for Freeboard Warm Query API",
-        "Name": "Freeboard API Proxy"
-      },
-      "LookupConfig": {
-        "PathRegex": "/api/iot.*"
-      },
-      "Package": {
-        "Details": {
-          "APIRoot": "https://fathym-cloud-prd.azure-api.net/fcp-iotensemble/WarmQuery",
-          "Security": "lcu-subscription-key~{{IOT_ENSEMBLE_API_KEY}}"
-        },
-        "Type": "APILowCodeUnit"
-      },
-      "Processor": {
-        "Details": {
-          "InboundPath": "api/iot"
-        },
-        "Type": "ProxyProcessor"
-      }
-    },
-    "{{$2}}-freeboard-dashboard": {
-      "Details": {
-        "Description": "Freeboard Dashboard",
+        "Description": "Freeboard dashboard",
         "Name": "Freeboard Dashboard"
       },
       "LookupConfig": {
@@ -53,13 +31,35 @@
           "Value": "{\"FreeboardConfigURL\": \"https://www.fathym.com/templates/freeboard/DeviceDemoDashboard-BioTech.json\"}"
         }
       }
+    },
+    "{{#2}}-freeboard-api": {
+      "Details": {
+        "Name": "Freeboard API Proxy",
+        "Description": "The API Proxy for Freeboard Warm Query API"
+      },
+      "LookupConfig": {
+        "PathRegex": "/api/iot.*"
+      },
+      "Package": {
+        "Details": {
+          "APIRoot": "https://fathym-cloud-prd.azure-api.net/fcp-iotensemble/WarmQuery",
+          "Security": "lcu-subscription-key~{{IOT_ENSEMBLE_API_KEY}}"
+        },
+        "Type": "APILowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "InboundPath": "api/iot"
+        },
+        "Type": "ProxyProcessor"
+      }
     }
   },
   "Projects": {
     "{{PROJECT_LOOKUP}}": {
       "ApplicationLookups": [
-        "{{$1}}-freeboard-api",
-        "{{$2}}-freeboard-dashboard"
+        "{{$1}}-freeboard-dashboard",
+        "{{#2}}-freeboard-api"
       ]
     }
   }

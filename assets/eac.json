@@ -24,7 +24,7 @@
         "Name": "Freeboard Dashboard"
       },
       "LookupConfig": {
-        "PathRegex": "/freeboard.*"
+        "PathRegex": "/.*"
       },
       "LowCodeUnit": {
         "Package": "@semanticjs/freeboard",
@@ -32,7 +32,7 @@
         "Type": "NPM"
       },
       "Processor": {
-        "BaseHref": "/freeboard/",
+        "BaseHref": "/",
         "DefaultFile": "index.html",
         "Type": "DFS"
       },

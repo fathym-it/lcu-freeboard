@@ -6,7 +6,7 @@
         "Name": "Freeboard Dashboard"
       },
       "LookupConfig": {
-        "PathRegex": "/freeboard.*"
+        "PathRegex": "/.*"
       },
       "Package": {
         "Details": {
@@ -17,7 +17,7 @@
       },
       "Processor": {
         "Details": {
-          "BaseHref": "/freeboard/",
+          "BaseHref": "/",
           "DefaultFile": "index.html"
         },
         "Type": "DFSProcessor"

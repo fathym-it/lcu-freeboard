@@ -1,7 +1,7 @@
 {
   "Package": {
     "Name": "Freeboard Dashboard",
-    "Description": "Freeboard Dashboard to view IoT device data",
+    "Description": "A Freeboard dashboard to view emulated or device data auto-populated from IoT Ensemble.",
     "Button": "Launch",
     "Image": "https://www.fathym.com/assets/images/logo.png",
     "PreviewImage": "https://www.fathym.com/assets/images/logo.png",

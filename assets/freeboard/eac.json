@@ -2,7 +2,7 @@
   "Applications": {
     "{{$1}}-freeboard-dashboard": {
       "Details": {
-        "Description": "Freeboard dashboard",
+        "Description": "A Freeboard dashboard to view emulated or device data auto-populated from IoT Ensemble.",
         "Name": "Freeboard Dashboard"
       },
       "LookupConfig": {
@@ -57,6 +57,10 @@
   },
   "Projects": {
     "{{PROJECT_LOOKUP}}": {
+      "Details": {
+        "Name": "{{#if (lookup EaC.Projects PROJECT_LOOKUP)}}{{#if Details.Name}}{{Details.Name}}{{/if}}{{else}}Freeboard Dashboard{{/if}}",
+        "Description": "{{#if (lookup EaC.Projects PROJECT_LOOKUP)}}{{#if Details.Description}}{{Details.Description}}{{/if}}{{else}}A Freeboard dashboard to view emulated or device data auto-populated from IoT Ensemble.{{/if}}"
+      },
       "ApplicationLookups": [
         "{{$1}}-freeboard-dashboard",
         "{{#2}}-freeboard-api"

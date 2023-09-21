@@ -1,7 +1,6 @@
 {
   "Package": {
     "Name": "Freeboard Dashboard",
-<<<<<<< HEAD
     "Description": "A Freeboard dashboard to view emulated or device data auto-populated from IoT Ensemble.",
     "Image": "https://www.fathym.com/assets/images/logo.png",
     "PreviewImage": "https://www.fathym.com/assets/images/logo.png",
@@ -27,14 +26,3 @@
     }
   }
 }
-=======
-    "Description": "Freeboard Dashboard to view IoT device data",
-    "Button": "Launch",
-    "Image": "https://www.fathym.com/assets/images/logo.png",
-    "PreviewImage": "https://www.fathym.com/assets/images/logo.png",
-    "SuccessType": "Project"
-  },
-  "EaC": "./assets/eac.json",
-  "Parameters": "./assets/parameters.json"
-}
->>>>>>> origin/integration
